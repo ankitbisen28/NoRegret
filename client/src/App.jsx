@@ -7,7 +7,9 @@ function App() {
   const [data, setData] = useState([]);
 
   const getDetails = async () => {
-    const response = await axios.get("http://localhost:5000/api/users/list");
+    const response = await axios.get(
+      "https://noregret.onrender.com/api/users/list"
+    );
     setData(response.data);
   };
 
